@@ -1,0 +1,1 @@
+document.write("<button onclick=hamburger() style={padding: 16px; background-color: lime; border: gold 4px solid}>Click</button>")

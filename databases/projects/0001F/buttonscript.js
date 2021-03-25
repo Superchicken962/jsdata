@@ -9,6 +9,7 @@ var tls7 = document.getElementById("tls-7");
 var tls8 = document.getElementById("tls-8");
 var tls9 = document.getElementById("tls-9");
 var tls10 = document.getElementById("tls-10");
+var tls11 = document.getElementById("tls-11");
 // Hiding all of the variables so they can be unhidden later
 tls1.style.display = "none";
 tls2.style.display = "none";
@@ -20,6 +21,7 @@ tls7.style.display = "none";
 tls8.style.display = "none";
 tls9.style.display = "none";
 tls10.style.display = "none";
+tls11.style.display = "none";
 // Creating the line that will be getting replaced each time the button is pressed.
 var newtextline = " "; // leave blank
 newtextline.style.display = "none";
@@ -63,5 +65,11 @@ function newlinestack() { // this version will print out (unhide) another line o
         tls9.style.display = "block";
     } else if (tls10.style.display == "none") {
         tls10.style.display = "block";
+    } else if (tls11.style.display == "none") {
+        tls11.style.display = "block";
+    } else if (tls11.style.display == "block") {
+        var tlscopy = document.getElementById("tls-11");
+        var dupetls = tlscopy.cloneNode(true);
+        document.body.appendChild(dupetls);
     }
 }
